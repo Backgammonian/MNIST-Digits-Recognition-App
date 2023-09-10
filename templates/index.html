@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		1️⃣2️⃣3️⃣ MNIST Digits Classifier
+	</title>
+	<meta charset="utf-8">
+	<script src="{{ url_for('static', filename='js/classes.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/canvas.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"> 
+</head>
+
+<body>
+	<div class="center">
+		<div class="horizontal">
+			<div class="tools">
+				<div id="btn10" class="button" onclick="changeTool('pencil', 'btn10')">Pencil</div>
+				<div id="btn11" class="button" onclick="changeTool('brush', 'btn11')">Brush<input type="number" id="brush-radius" value="3" min="minBrush" max="maxBrush" oninput="changeBrushRadius(this.value);"></div>
+			</div>
+
+			<div class="canvas-wrapper">
+				<canvas id="canvas" width="256" height="256" class="my-canvas">
+					Alt canvas
+				</canvas>
+			</div>
+
+			<div class="tools output">
+				<div class="output-bar">
+					<label for="output_0">0</label>
+					<progress id="output_0" min="0" max="100" value="0"></progress>
+				</div>
+				<div class="output-bar">
+					<label for="output_1">1</label>
+					<progress id="output_1" min="0" max="100" value="0"></progress>
+				</div>
+				<div class="output-bar">
+					<label for="output_2">2</label>
+					<progress id="output_2" min="0" max="100" value="0"></progress>
+				</div>
+				<div class="output-bar">
+					<label for="output_3">3</label>
+					<progress id="output_3" min="0" max="100" value="0"></progress>
+				</div>
+				<div class="output-bar">
+					<label for="output_4">4</label>
+					<progress id="output_4" min="0" max="100" value="0"></progress>
+				</div>
+				<div class="output-bar">
+					<label for="output_5">5</label>
+					<progress id="output_5" min="0" max="100" value="0"></progress>
+				</div>
+				<div class="output-bar">
+					<label for="output_6">6</label>
+					<progress id="output_6" min="0" max="100" value="0"></progress>
+				</div>
+				<div class="output-bar">
+					<label for="output_7">7</label>
+					<progress id="output_7" min="0" max="100" value="0"></progress>
+				</div>
+				<div class="output-bar">
+					<label for="output_8">8</label>
+					<progress id="output_8" min="0" max="100" value="0"></progress>
+				</div>
+				<div class="output-bar">
+					<label for="output_9">9</label>
+					<progress id="output_9" min="0" max="100" value="0"></progress>
+				</div>
+			</div>
+		</div>
+
+		<div class="horizontal">
+			<div class="current-color-wrapper">
+				<div id="current-color"></div>
+			</div>
+
+			<div class="palette">
+				<div class="color black" onclick="changeColor('#000000')"></div>
+				<div class="color white" onclick="changeColor('#ffffff')"></div>
+			</div>
+
+			<div class="options">
+				<div class="options-button" onclick="resetCanvas()">Clear canvas</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

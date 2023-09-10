@@ -1,0 +1,4 @@
+flask
+numpy
+tensorflow==2.8.3
+Pillow

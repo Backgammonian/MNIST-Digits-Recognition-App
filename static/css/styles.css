@@ -1,0 +1,227 @@
+.canvas-wrapper
+{
+	overflow: scroll;
+	display: inline-block;
+	width: 282px;
+	height: 286px;
+	border: 2px solid black;
+}
+
+.my-canvas
+{
+	border: 2px solid gray;
+	margin: 2px;
+}
+
+.horizontal
+{
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.tools
+{
+	display: inline-flex;
+	flex-flow: column wrap;
+	align-items: center;
+	flex-basis: 108px;	
+	font-family: sans-serif;
+	margin-right: 2px;
+	border: 2px solid black;
+	padding-top: 2px;
+}
+
+.button
+{
+	display: inline-flex;
+	flex-flow: column wrap;
+	flex-shrink: 0;
+	flex-grow: 0;
+	width: 100px;
+	font-size: 16px;
+	border: 2px solid gray;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	margin-bottom: 2px;
+	
+}
+
+.button_hover
+{
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+
+.button:hover
+{
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+
+.palette
+{
+	display: flex;
+	flex-flow: row wrap;
+	height: 56px;
+	width: 112px;
+	margin-top: 2px;
+	border: 2px solid black;
+}
+
+.color
+{
+	flex-shrink: 0;
+	flex-grow: 0;
+	width: 50px;
+	height: 50px;
+	border: 2px solid gray;
+	margin: 1px;
+}
+
+.black
+{
+	background-color: #000000;
+}
+
+.white
+{
+	background-color: #ffffff;
+}
+
+.color:hover
+{
+	cursor: pointer;
+}
+
+.current-color-wrapper
+{
+	height: 56px;
+	width: 108px;
+	margin-top: 2px;
+	margin-right: 2px;
+	border: 2px solid black;
+}
+
+#current-color
+{
+	margin: 1px 25%;
+	width: 50px;
+	height: 50px;
+	border: 2px solid gray;
+}
+
+.color-converter
+{
+	font-family: sans-serif;
+	font-size: 14px;
+	border: 2px solid black;
+	margin-left: 2px;
+	margin-top: 2px;
+}
+
+.value-of-parameter
+{
+	width: 40px;
+}
+
+select
+{
+	width: 100px;
+	margin: 2px;
+}
+
+.color-parameter
+{
+	display: inline-flex;
+	flex-flow: column wrap;
+	margin: 2px;
+}
+
+.name-of-parameter
+{
+	margin-right: 2px;
+}
+
+#palette-color
+{
+	width: 100px;
+	height: 20px;
+	border: 2px solid gray;
+	margin: 2px;
+}
+
+.color-buttons
+{
+	display: flex;
+	flex-flow: row wrap;
+	margin-top: 22px;
+}
+
+.options
+{
+	font-family: sans-serif;
+	border: 2px solid black;
+	margin-left: 2px;
+	margin-top: 2px;
+	height: 56px;
+}
+
+.options-button
+{
+	width: 94px;
+	font-size: 14px;
+	border: 2px solid gray;
+	align-items: center;
+	text-align: center;
+	margin: 2px;
+	
+}
+
+.options-button:hover
+{
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+
+#brush-radius
+{
+	width: 50px; 
+	margin: 2px;
+}
+
+.center
+{
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.output
+{
+	margin-left: 2px;
+}
+
+.output-bar
+{
+	padding: 4px;
+	width: 180px;
+}
+
+progress::-moz-progress-bar 
+{ 
+	background: black; 
+}
+
+progress::-webkit-progress-value 
+{ 
+	background: black;
+}
+
+progress 
+{ 
+	color: black; 
+}
