@@ -5,7 +5,7 @@ from tensorflow import keras
 import numpy as np
 from PIL import Image
 
-MODEL_NAME = 'mnist_v2.keras'
+MODEL_NAME = 'my_mnist_v2.keras'
 model = keras.models.load_model(MODEL_NAME, compile = False)
 model.compile(
 	loss = 'sparse_categorical_crossentropy',
